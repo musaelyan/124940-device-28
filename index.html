@@ -5,8 +5,117 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Начинаю верстать</p>
-
+    <header class="header">
+      <div class="container">
+        <a class="logo">
+          <img src="/" alt="Логотип Девайс">
+        </a>
+        <div class="header__row">
+          <div class="header__block">
+            <div class="header__search">
+              <input class="field field--search" type="search" placeholder="Поиск по сайту">
+            </div>
+          </div>
+          <div class="header__block">
+            <div class="header__user">
+              <a href="#" class="header__link">Войти</a>
+            </div>
+            <a href="#" class="header__link">Сравнить</a>
+            <a href="#" class="header__link">Корзина</a>
+          </div>
+        </div>
+        <nav class="header__row menu">
+          <div class="header__block menu__main">
+            <a href="#" class="menu__item menu__item--multi">Каталог товаров</a>
+            <div class="submenu">
+              <div class="submenu__col">
+                <a href="#" class="submenu__link">Виртуальная реальность</a>
+                <a href="catalog.html" class="submenu__link">Моноподы для селфи</a>
+                <a href="#" class="submenu__link">Экшн-камеры</a>
+              </div>
+              <div class="submenu__col">
+                <a href="#" class="submenu__link">Фитнес-браслеты</a>
+                <a href="#" class="submenu__link">Умные часы</a>
+              </div>
+              <div class="submenu__col">
+                <a href="#" class="submenu__link">Квадрокоптер</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__block">
+            <a href="#" class="menu__item">Доставка</a>
+            <a href="#" class="menu__item">Гарантия</a>
+            <a href="#" class="menu__item">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <h1>Магазин электронных гаджетов</h1>
+      <!-- здесь будет слайдер -->
+      <!-- ссылки на страницы списка товаров -->
+      <!-- табы -->
+      <!-- производители -->
+      <div class="container">
+        <section class="about">
+          <h2 class="section-title">О нас</h2>
+          <div class="about__description content">
+            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          </div>
+          <ul class="about__suppliers">
+            <li class="about__suppliers-item">Деловые линии</li>
+            <li class="about__suppliers-item">Автотрейдинг</li>
+            <li class="about__suppliers-item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#" class="btn">Подробнее о нас</a>
+        </section>
+        <section class="contacts">
+          <h2 class="section-title">Контакты</h2>
+          <div class="contacts__description content">
+            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          </div>
+          <a href="#" class="contacts__map">
+            <!-- здесь будет карта -->
+          </a>
+          <a href="#" class="btn">Напишите нам</a>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__user-nav">
+          <a href="#" class="footer__user-nav-item">Войти</a>
+          <a href="#" class="footer__user-nav-item">Сравнить</a>
+          <a href="#" class="footer__user-nav-item">Корзина</a>
+        </div>
+        <a class="footer__logo">
+          <img src="/" alt="Логотип Девайс">
+        </a>
+        <div class="footer__row">
+          <p class="footer__col footer__col--contacts">
+            г. Москва, ул. Строителей, 15
+          </p>
+          <ul class="footer__col footer__col--center footer-menu">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Доставка</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Гарантия</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
+          </ul>
+          <p class="footer__col footer__col--contacts footer__col--right">
+            Тел.: <a href="tel:+74954959595" class="footer__link">+7 (495) 495-95-95</a>
+          </p>
+        </div>
+        <div class="footer__row footer__row--end">
+          <ul class="social-btns footer__col footer__col--center">
+            <li class="social-btns__item"><a href="#" class="social-btn">Facebook</a></li>
+            <li class="social-btns__item"><a href="#" class="social-btn">Instagram</a></li>
+            <li class="social-btns__item"><a href="#" class="social-btn">Twitter</a></li>
+          </ul>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="creator footer__col footer__col--right">
+            Лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов»
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
