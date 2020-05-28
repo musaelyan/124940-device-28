@@ -6,6 +6,8 @@
   </head>
   <body>
     <header class="header">
+      <h1>Магазин электронных гаджетов</h1>
+      <!-- сделать сайт резиновым до планшета -->
       <div class="container">
         <a class="logo">
           <img src="/" alt="Логотип Девайс">
@@ -51,11 +53,199 @@
       </div>
     </header>
     <main class="page">
-      <h1>Магазин электронных гаджетов</h1>
-      <!-- здесь будет слайдер -->
-      <!-- ссылки на страницы списка товаров -->
-      <!-- табы -->
-      <!-- производители -->
+      <section class="promo-slider">
+        <h2>Слайдер с топовыми товарами</h2>
+        <ul class="promo-slider__wrapper">
+          <li class="promo-slider__slide promo-slider__slide--active">
+            <div class="container">
+              <div class="promo-slider__img">
+                <img src="/" alt="Изображение селфи-палки">
+              </div>
+              <div class="promo-slider__content">
+                <!-- попробовать сделать цифру через псевдоэлемент -->
+                <div class="promo-slider__number">01</div>
+                <p class="promo-slider__title">Делай селфи, как Бен Стиллер!</p>
+                <p class="promo-slider__description">
+                  Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                </p>
+                <a href="#" class="btn">Подробнее</a>
+                <ul class="promo-slider__features">
+                  <li class="promo-slider__feature">
+                    <div class="promo-slider__feature-title">8,5 м</div>
+                    <div class="promo-slider__feature-description">Длина палки</div>
+                  </li>
+                  <li class="promo-slider__feature">
+                    <div class="promo-slider__feature-title">5 кг</div>
+                    <div class="promo-slider__feature-description">Вес палки</div>
+                  </li>
+                  <li class="promo-slider__feature">
+                    <div class="promo-slider__feature-title">Карбон</div>
+                    <div class="promo-slider__feature-description">Материал</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="promo-slider__slide">
+            <div class="container">
+              <div class="promo-slider__img">
+                <img src="/" alt="Изображение фитнес-браслета">
+              </div>
+              <div class="promo-slider__content">
+                <!-- попробовать сделать цифру через псевдоэлемент -->
+                <div class="promo-slider__number">02</div>
+                <p class="promo-slider__title">Худеем правильно!</p>
+                <p class="promo-slider__description">
+                  Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                </p>
+                <a href="#" class="btn">Подробнее</a>
+                <ul class="promo-slider__features">
+                  <li class="promo-slider__feature">
+                    <div class="promo-slider__feature-title">48 часов</div>
+                    <div class="promo-slider__feature-description">Без подзарядки</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="promo-slider__slide">
+            <div class="container">
+              <div class="promo-slider__img">
+                <img src="/" alt="Изображение квадрокоптера">
+              </div>
+              <div class="promo-slider__content">
+                <!-- попробовать сделать цифру через псевдоэлемент -->
+                <div class="promo-slider__number">03</div>
+                <p class="promo-slider__title">Порхает как бабочка, жалит как пчела!</p>
+                <p class="promo-slider__description">
+                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <a href="#" class="btn">Подробнее</a>
+                <ul class="promo-slider__features">
+                  <li class="promo-slider__feature">
+                    <div class="promo-slider__feature-title">800 м</div>
+                    <div class="promo-slider__feature-description">Дальность полета</div>
+                  </li>
+                  <li class="promo-slider__feature">
+                    <div class="promo-slider__feature-title">50 м</div>
+                    <div class="promo-slider__feature-description">Радиус поражения</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- спозиционировать снизу -->
+        <div class="promo-slider__pagination">
+          <button type="button" class="promo-slider__pagination-btn promo-slider__pagination-btn--active">Слайд номер 1</button>
+          <button type="button" class="promo-slider__pagination-btn">Слайд номер 1</button>
+          <button type="button" class="promo-slider__pagination-btn">Слайд номер 1</button>
+        </div>
+      </section>
+      <section class="goods">
+        <h2>Список разделов каталога</h2>
+        <div class="container">
+          <ul class="goods__list">
+            <li class="goods__item">
+              <a href="#" class="goods__link goods-card">
+                <div class="goods-card__img">
+                  <img src="/" alt="Изображение очков виртуальной реальности">
+                </div>
+                <h3 class="goods-card__title">Виртуальная реальность</h3>
+              </a>
+            </li>
+            <li class="goods__item">
+              <a href="#" class="goods__link goods-card">
+                <div class="goods-card__img">
+                  <img src="/" alt="Изображение монопода">
+                </div>
+                <h3 class="goods-card__title">Моноподы для селфи</h3>
+              </a>
+            </li>
+            <li class="goods__item">
+              <a href="#" class="goods__link goods-card">
+                <div class="goods-card__img">
+                  <img src="/" alt="Изображение экшн-камеры">
+                </div>
+                <h3 class="goods-card__title">Экшн-камеры</h3>
+              </a>
+            </li>
+            <li class="goods__item">
+              <a href="#" class="goods__link goods-card">
+                <div class="goods-card__img">
+                  <img src="/" alt="Изображение фитнес-браслета">
+                </div>
+                <h3 class="goods-card__title">Фитнес-браслеты</h3>
+              </a>
+            </li>
+            <li class="goods__item">
+              <a href="#" class="goods__link goods-card">
+                <div class="goods-card__img">
+                  <img src="/" alt="Изображение электронных часов">
+                </div>
+                <h3 class="goods-card__title">Умные часы</h3>
+              </a>
+            </li>
+            <li class="goods__item">
+              <a href="#" class="goods__link goods-card">
+                <div class="goods-card__img">
+                  <img src="/" alt="Изображение квадрокоптера">
+                </div>
+                <h3 class="goods-card__title">Квадрокоптеры</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="features">
+        <h2>Наши преимущества</h2>
+        <div class="container">
+          <div class="features__tabs">
+            <button class="btn features__tab features__tab--active">Доставка</button>
+            <button class="btn features__tab">Гарантия</button>
+            <button class="btn features__tab">Кредит</button>
+          </div>
+          <div class="features__tabs-content">
+            <div class="features__tab-content features__tab-content--active">
+              <h3 class="features__tab-title">Доставка</h3>
+              <p class="features__tab-description">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+              </p>
+            </div>
+            <div class="features__tab-content">
+              <h3 class="features__tab-title">Гарантия</h3>
+              <p class="features__tab-description">
+                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+              </p>
+            </div>
+            <div class="features__tab-content">
+              <h3 class="features__tab-title">Кредит</h3>
+              <p class="features__tab-description">
+                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="suppliers">
+        <h2>Наши поставщики</h2>
+        <div class="container">
+          <div class="suppliers__list">
+            <a href="#" class="suppliers__link">
+              <img src="" alt="Логотип dji">
+            </a>
+            <a href="#" class="suppliers__link">
+              <img src="" alt="Логотип SPGadgets">
+            </a>
+            <a href="#" class="suppliers__link">
+              <img src="" alt="Логотип GoPro">
+            </a>
+            <a href="#" class="suppliers__link">
+              <img src="" alt="Логотип Vive">
+            </a>
+          </div>
+        </div>
+      </section>
       <div class="container">
         <section class="about">
           <h2 class="section-title">О нас</h2>
@@ -77,6 +267,7 @@
           </div>
           <a href="#" class="contacts__map">
             <!-- здесь будет карта -->
+            <img src="/" alt="Карта с адресом: ул. Строителей, 15">
           </a>
           <a href="#" class="btn">Напишите нам</a>
         </section>
@@ -112,7 +303,7 @@
             <li class="social-btns__item"><a href="#" class="social-btn">Twitter</a></li>
           </ul>
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="creator footer__col footer__col--right">
-            Лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов»
+            Ссылка на лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов»
           </a>
         </div>
       </div>
