@@ -73,7 +73,25 @@
             <div class="catalog-col catalog-col--75">
               <div class="catalog-top__filters">
                 <p class="catalog-top__title">Сортировка:</p>
-                <!-- здесь будет сортировка -->
+                <ul class="catalog-sort-type">
+                  <li class="catalog-sort-type__item">
+                    <a href="#" class="catalog-sort-type__link catalog-sort-type__link--active">По цене</a>
+                  </li>
+                  <li class="catalog-sort-type__item">
+                    <a href="#" class="catalog-sort-type__link">По типу</a>
+                  </li>
+                  <li class="catalog-sort-type__item">
+                    <a href="#" class="catalog-sort-type__link">По популярности</a>
+                  </li>
+                </ul>
+                <div class="catalog-sort-direction">
+                  <a href="#" class="catalog-sort-direction__item catalog-sort-direction__item--up">
+                    <span class="visually-hidden">Сортировка по возрастанию</span>
+                  </a>
+                  <a href="#" class="catalog-sort-direction__item catalog-sort-direction__item--down">
+                    <span class="visually-hidden">Сортировка по убыванию</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -86,7 +104,25 @@
             <form class="filters__form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filters__block">
                 <legend class="filters__title">Стоимость</legend>
-                <!-- здесь будут ползунки -->
+                <div class="range">
+                  <span class="visually-hidden">Фильтр-ползунок с двумя ограничениями</span>
+                  <div class="range__main-bar">
+                    <div class="range__inner-bar">
+                      <div class="range__toggle range__toggle--min">
+                        <span class="visually-hidden">Ползунок минимальная цена</span>
+                        <input type="hidden" name="price-min" value="0">
+                        <div class="range__toggle-btn"></div>
+                        <span class="range__toggle-label">от 0</span>
+                      </div>
+                      <div class="range__toggle range__toggle--max">
+                        <span class="visually-hidden">Ползунок максимальная цена</span>
+                        <input type="hidden" name="price-max" value="5000">
+                        <div class="range__toggle-btn"></div>
+                        <span class="range__toggle-label">от 5000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="filters__block">
                 <legend class="filters__title">Цвет</legend>
